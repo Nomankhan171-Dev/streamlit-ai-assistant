@@ -8,13 +8,115 @@ st.set_page_config(page_title="Nexa AI Assistant", page_icon="🤖", layout="cen
 
 st.markdown("""
 <style>
-.stApp{background:radial-gradient(circle at 10% 0%,rgba(38,99,235,.16),transparent 30%),#07111f;color:#f8fafc}
-[data-testid="stHeader"]{background:transparent}
-.main-title{font-size:2.4rem;font-weight:800;margin-bottom:.2rem}
-.sub-title{color:#94a3b8;font-size:1rem;margin-bottom:1.4rem}
-.tech-badges{display:flex;gap:10px;margin:8px 0 18px;flex-wrap:wrap}
-.badge{background:#12233a;color:#22d3ee;border:1px solid #1e3a5f;padding:7px 12px;border-radius:9px;font-size:.78rem;font-weight:700;letter-spacing:.04em}
-.small-note{color:#64748b;font-size:.78rem;text-align:center;margin-top:12px}
+.stApp{
+    background: radial-gradient(circle at 10% 0%, rgba(38,99,235,.18), transparent 30%), #07111f;
+    color: #ffffff !important;
+}
+
+[data-testid="stHeader"]{
+    background: transparent;
+}
+
+.main-title{
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: .2rem;
+    color: #ffffff !important;
+}
+
+.sub-title{
+    color: #dbeafe !important;
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.tech-badges{
+    display:flex;
+    gap:10px;
+    margin:8px 0 18px;
+    flex-wrap:wrap;
+}
+
+.badge{
+    background:#12233a;
+    color:#22d3ee;
+    border:1px solid #1e3a5f;
+    padding:7px 12px;
+    border-radius:9px;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.04em;
+}
+
+.small-note{
+    color:#cbd5e1 !important;
+    font-size:.78rem;
+    text-align:center;
+    margin-top:12px;
+}
+
+/* All normal text white */
+p, li, label, span, div, h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+/* Expander */
+details, summary {
+    color: #ffffff !important;
+}
+.streamlit-expanderHeader{
+    color:#ffffff !important;
+}
+
+/* Chat messages */
+[data-testid="stChatMessage"]{
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid #243b5e;
+    border-radius: 16px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+}
+[data-testid="stChatMessage"] *{
+    color:#ffffff !important;
+}
+[data-testid="stChatMessageContent"]{
+    color:#ffffff !important;
+    font-size: 1rem;
+}
+
+/* Code / inline chips */
+code{
+    color:#22d3ee !important;
+    background:#10253f !important;
+    padding: 3px 8px;
+    border-radius: 8px;
+}
+
+/* Chat input */
+[data-testid="stChatInput"]{
+    background: rgba(15,23,42,.95);
+    border: 1px solid #35527d;
+    border-radius: 16px;
+}
+[data-testid="stChatInput"] textarea{
+    color:#ffffff !important;
+    background: transparent !important;
+}
+[data-testid="stChatInput"] textarea::placeholder{
+    color:#cbd5e1 !important;
+    opacity:1 !important;
+}
+
+/* Buttons */
+.stButton > button{
+    color:#ffffff !important;
+    border-color:#35527d !important;
+}
+
+/* Markdown container text */
+[data-testid="stMarkdownContainer"] *{
+    color:#ffffff !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
